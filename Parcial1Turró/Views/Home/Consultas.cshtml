@@ -1,7 +1,43 @@
 ﻿@{
     ViewData["Title"] = "Consultas";
 }
+@model IEnumerable<Cliente>
 
 <div class="text-center">
     <h1 class="display-4">Consultas</h1>
+    @if (Model is not null)
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Razón social</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col">Localidad</th>
+                    <th scope="col">País</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+
+                    int i = 1;
+
+                    foreach (var cliente in Model)
+                    {
+                        <tr>
+                            <th scope="row">@i</th>
+                            <td>@cliente.email</td>
+                            <td>@cliente.razonSocial</td>
+                            <td>@cliente.direccion</td>
+                            <td>@cliente.localidad</td>
+                            <td>@cliente.pais</td>
+                        </tr>
+
+                        i++;
+                    }
+                }
+            </tbody>
+        </table>
+    }
 </div>
