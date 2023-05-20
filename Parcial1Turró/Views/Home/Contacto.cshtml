@@ -2,6 +2,20 @@
     ViewData["Title"] = "Contacto";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Contacto</h1>
-</div>
+<form>
+    <div class="row">
+        <div class="col">
+            <div class="mb-2">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" type="email" class="form-control w-75" name="email" />
+            </div>
+            <div class="mb-3">
+                <label for="consulta" class="form-label">Consulta</label>
+                <div class="d-flex align-items-center">
+                    <textarea id="consulta" class="form-control me-2" name="consulta" rows="3"></textarea>
+                    <button class="btn btn-primary align-self-center">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
