@@ -1,12 +1,46 @@
 ﻿@{
     ViewData["Title"] = "Consultas";
 }
-@model IEnumerable<Cliente>
+@{
+    var clientes = new List<Cliente>
+    {
+    new Cliente
+    {
+        email = "pepito@gmail.com",
+        razonSocial = 11111111,
+        direccion = "Calle 1400",
+        localidad = "Rosario",
+        pais = "Argentina"
+    },
+    new Cliente
+    {
+        email = "jorgito@gmail.com",
+        razonSocial = 22222222,
+        direccion = "Calle 2112",
+        localidad = "Brasilia",
+        pais = "Brasil"
+    },
+    new Cliente
+    {
+        email = "rodrigo@gmail.com",
+        razonSocial = 33333333,
+        direccion = "Calle 2478",
+        localidad = "Toronto",
+        pais = "Canada"
+    },
+    new Cliente
+    {
+        email = "florentino@gmail.com",
+        razonSocial = 44444444,
+        direccion = "Calle 9876",
+        localidad = "Madrid",
+        pais = "España"
+    }
+    };
+}
 
 <div class="text-center">
     <h1 class="display-4">Consultas</h1>
-    @if (Model is not null)
-    {
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -21,7 +55,7 @@
             <tbody>
                 @{
                     int i = 1;
-                    foreach (var cliente in Model)
+                    foreach (var cliente in clientes)
                     {
                         <tr>
                             <th scope="row">@i</th>
@@ -31,11 +65,9 @@
                             <td>@cliente.localidad</td>
                             <td>@cliente.pais</td>
                         </tr>
-
                         i++;
                     }
                 }
             </tbody>
         </table>
-    }
 </div>
