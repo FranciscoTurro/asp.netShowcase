@@ -33,6 +33,17 @@ namespace Parcial1Turró.Controllers
             return View();
         }
 
+        public IActionResult Respuesta()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult RedireccionRespuesta()
+        {
+            return RedirectToAction("Respuesta");
+        }
+
         public IActionResult Consultas()
         {
             var clientes = ObtenerClientes();
