@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Formulario";
+}
+
+<div>
+    <form>
+        <div class="mb-2">
+            <label for="email" class="form-label">Email address</label>
+            <input id="email" type="email" class="form-control" name="email" placeholder="name@example.com" />
+        </div>
+        <div class="mb-2">
+            <label for="razon" class="form-label">Razón social</label>
+            <input id="razon" type="number" class="form-control" name="razon" placeholder="1" />
+        </div>
+        <div class="mb-3">
+                <div class="row">
+                    <div class="col">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input id="direccion" type="number" class="form-control" placeholder="1">
+                    </div>
+                    <div class="col">
+                        <label for="codigo" class="form-label">Código postal</label>
+                        <input id="codigo" type="number" class="form-control" placeholder="1">
+                    </div>
+                    <div class="col">
+                        <label for="pais" class="form-label">País</label>
+                        <select id="pais" class="form-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Uruguay</option>
+                            <option value="2">Paraguay</option>
+                            <option value="3">Brasil</option>
+                        </select>
+                    </div>
+                </div>
+        </div>
+        <div class="mb-4">
+            <input class="form-check-input" type="checkbox" value="" id="check1">
+            <label class="form-check-label" for="check1">Option 1</label>
+            <input class="form-check-input" type="checkbox" value="" id="check2">
+            <label class="form-check-label" for="check2">Option 2</label>
+        </div>
+        <div class="mb-5">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" class="form-control" name="mensaje" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary">Enviar</button>
+        <button class="btn btn-danger">Cancelar</button>
+    </form>
+</div>

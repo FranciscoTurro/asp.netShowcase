@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/img/img1.jpg" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/img2.jpg" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/img3.jpg" class="d-block w-100" />
+            </div>
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="fw-bold">Heading 1</h1>
+                <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec convallis sapien. Sed nibh velit, convallis ac ultricies sit amet, facilisis vitae felis. In malesuada quis elit a venenatis.</p>
+            </div>
+            <div class="col-sm">
+                <div>
+                    <h1 class="fw-bold">Heading 2</h1>
+                    <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec convallis sapien. Sed nibh velit, convallis ac ultricies sit amet, facilisis vitae felis. In malesuada quis elit a venenatis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <img class="img-fluid" width="960" height="540" src="~/img/img4.jpg" alt="imagen 4"/>
+    </div>
+
+</div>
