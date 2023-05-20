@@ -2,6 +2,23 @@
     ViewData["Title"] = "Imagenes";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Imagenes</h1>
+<div>
+    <div class="text-start">
+        <h1 class="fw-bold">Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec convallis sapien. Sed nibh velit, convallis ac ultricies sit amet, facilisis vitae felis. In malesuada quis elit a venenatis.</p>
+    </div>
+    <div class="row">
+        @for (var i = 1; i < 5; i++)
+        {
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <img src="~/img/img@(i).jpg" class="car-img-top" alt="imagen @(i)" />
+                </div>
+            </div>
+        }
+    </div>
 </div>
